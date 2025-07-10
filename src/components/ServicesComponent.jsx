@@ -7,13 +7,6 @@ import Cookies from 'js-cookie';
 const serviceUrlMap = {
   NUMBER_PLATE_SERVICES: 'https://mvaa-portal.netlify.app/auth/shared-user',
   AUTO_DEALER_SPARE_PARTS: 'https://mvatvtlagos.com/mvaa-app/verify-session',
-  VEHICLE_REGISTRATION: 'https://registration.module1url.com/',
-  DRIVING_LICENSE: 'https://drivinglicense.module1url.com/',
-  HACKNEY_PERMIT: 'https://hackney.module1url.com/',
-  ROAD_WORTHINESS: 'https://roadworthiness.module1url.com/',
-  THIRD_PARTY_INSURANCE: 'https://insurance.module1url.com/',
-  INTERNATIONAL_DRIVING_LICENSE: 'https://intldrivinglicense.module1url.com/',
-  TINTED_PERMIT: 'https://tintedpermit.module1url.com/',
 };
 
 const ServicesComponent = () => {
@@ -65,69 +58,6 @@ const ServicesComponent = () => {
             description="Find vehicle related services like verify VIN, pay VIS etc permit"
             app_id="AUTO_DEALER_SPARE_PARTS"
             onClick={() => handleServiceClick('AUTO_DEALER_SPARE_PARTS')}
-          />
-          <ServiceCard
-            title="Car Registration"
-            icon="steering.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="VEHICLE_REGISTRATION"
-            onClick={() => handleServiceClick('VEHICLE_REGISTRATION')}
-          />
-          <ServiceCard
-            title="Driving License"
-            icon="plateNo.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="DRIVING_LICENSE"
-            onClick={() => handleServiceClick('DRIVING_LICENSE')}
-          />
-          <ServiceCard
-            title="Hackney Permit"
-            icon="hackney.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="HACKNEY_PERMIT"
-            onClick={() => handleServiceClick('HACKNEY_PERMIT')}
-          />
-          <ServiceCard
-            title="Road Worthiness"
-            icon="steering.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="ROAD_WORTHINESS"
-            onClick={() => handleServiceClick('ROAD_WORTHINESS')}
-          />
-          <ServiceCard
-            title="Third Party Insurance"
-            icon="plateNo.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="THIRD_PARTY_INSURANCE"
-            onClick={() => handleServiceClick('THIRD_PARTY_INSURANCE')}
-          />
-          <ServiceCard
-            title="Int'l Driving License"
-            icon="jacket.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="INTERNATIONAL_DRIVING_LICENSE"
-            onClick={() => handleServiceClick('INTERNATIONAL_DRIVING_LICENSE')}
-          />
-          <ServiceCard
-            title="Tinted Permit"
-            icon="steering.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="TINTED_PERMIT"
-            onClick={() => handleServiceClick('TINTED_PERMIT')}
-          />
-          <ServiceCard
-            title="Number Plate Services"
-            icon="keke.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="NUMBER_PLATE_SERVICES"
-            onClick={() => handleServiceClick('NUMBER_PLATE_SERVICES')}
-          />
-          <ServiceCard
-            title="Number Plate Services"
-            icon="hackney.png"
-            description="Find vehicle related services like verify VIN, pay VIS etc permit"
-            app_id="NUMBER_PLATE_SERVICES"
-            onClick={() => handleServiceClick('NUMBER_PLATE_SERVICES')}
           />
         </div>
       </div>

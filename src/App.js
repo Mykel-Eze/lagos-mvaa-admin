@@ -10,11 +10,6 @@ import Dashboard from './pages/Dashboard';
 import Services from './pages/Services';
 import Registration from './pages/Registration';
 import Home from './pages/Home';
-import NumberPlateServices from './pages/NumberPlateServices';
-import NewPlateIdSteps from './pages/NewPlateIdSteps';
-import GetNewPlateId from './pages/GetNewPlateId';
-import VehicleRegistration from './pages/VehicleRegistration';
-import OtherAgencyDepartments from './pages/OtherAgencyDepartments';
 import ProtectedRoute from './components/ProtectedRoute';
 
 import './index.css';
@@ -41,11 +36,6 @@ function App() {
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/services/number-plate-services" element={<NumberPlateServices />} />
-            <Route path="/services/new-plate-id-steps" element={<NewPlateIdSteps />} />
-            <Route path="/services/get-new-plate-id" element={<GetNewPlateId />} />
-            <Route path="/services/vehicle-registration" element={<VehicleRegistration />} />
-            <Route path="/services/other-agencies" element={<OtherAgencyDepartments />} />
           </Route>
         </Routes>
 
