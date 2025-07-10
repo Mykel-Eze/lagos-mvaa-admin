@@ -43,7 +43,7 @@ const Login = () => {
   };
 
   return (
-    <AuthLayout title="Login">
+    <AuthLayout title="Admin Login">
       {/* Login Form */}
       <Form 
         form={form}
@@ -90,9 +90,9 @@ const Login = () => {
         </Form.Item>
         
         <div className="mb-12">
-          <Link to="/forgot-password" className="sec-color hover:text-green-700 font-bold">
+          {/* <Link to="/forgot-password" className="sec-color hover:text-green-700 font-bold">
             Forgot Password?
-          </Link>
+          </Link> */}
         </div>
         
         <Form.Item>

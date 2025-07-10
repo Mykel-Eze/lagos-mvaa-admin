@@ -24,7 +24,7 @@ const Header = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
-    { path: '/contact', label: 'Contact' },
+    // { path: '/contact', label: 'Contact' },
   ];
 
   // Handle logout
@@ -77,7 +77,7 @@ const Header = () => {
 
         <div id="main-header">
           <div className="container">
-            <nav className="nav flex-div justify-content-btw">
+            <nav className="nav flex-div justify-between align-center">
               <Link to="/" className="nav-logo">
                 <img src={Logo} alt="Lagos MVAA Logo" />
               </Link>
@@ -93,27 +93,18 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <ul className="flex-div hidden-xs-sm nav-btn-wrapper">
-                {isLoggedIn ? (
-                  <>
+              {isLoggedIn ? (
+                <>
+                  <ul className="flex-div hidden-xs-sm nav-btn-wrapper">
                     <li>
                       <button onClick={handleLogout} className="nav-btn">Logout</button>
                     </li>
-                  </>
-                ) : (
-                  <>
-                    <li>
-                      <Link to="/login" className="nav-btn">Login</Link>
-                    </li>
-                    <li>
-                      <Link to="/register" className="pry-nav-btn flex div">
-                        <span>Get Started</span>
-                        <img src={require("../assets/images/arrow-1.svg").default} alt="arrow-icon" />
-                      </Link>
-                    </li>
-                  </>
-                )}
-              </ul>
+                  </ul>
+                </>
+              ) : (
+                <></>
+              )}
+
               {/* Mobile menu button (hamburger) */}
               <button className="visible-xs-sm white-txt focus:outline-none pointer" onClick={toggleMobileMenu}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
