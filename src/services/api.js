@@ -16,7 +16,7 @@ const api = axios.create({
 // API functions
 export const login = async (email, password) => {
   try {
-    const response = await api.post('/portal/auth/signin', { email, password });
+    const response = await api.post('/staff/auth/signin-staff', { email, password });
     
     // Store tokens in cookies instead of localStorage
     if (response.data.session_token) {
@@ -48,7 +48,7 @@ export const login = async (email, password) => {
 
 export const register = async (userData) => {
   try {
-    const response = await api.post('/portal/auth/signup', userData);
+    const response = await api.post('/staff/auth/signup-staff', userData);
     return response.data;
   } catch (error) {
     throw error.response?.data || { error: 'Network error' };
